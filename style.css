@@ -1,0 +1,217 @@
+	.body{
+	font-family: "Consolas";
+	color: 00FF00;
+	background: #000000;
+	background-image: url("assets/background1.gif");
+	background-repeat: no-repeat;
+	background-size:auto 150vh;
+  	background-attachment: fixed;
+	background-position: center;
+	}
+	
+	.text{
+	font-family: "Consolas";
+	color: 00FF00;
+	font-size: 18px;
+	}
+	
+	.centertext{
+	font-family: "Consolas";
+	color: 00FF00;
+	text-align: center;
+	}
+	
+	.retrofont {
+	color: #00FF00;
+	text-shadow: 0px 0px 10px #00FF00, 0 0 30px #00FF00, 0 0 5px #00FF00, 0 0 5px #00FF00;
+	font-family: "Consolas";
+	font-size: 3vw;
+	text-align: center;
+	display: flex;
+	}
+	
+	.contentbox{
+	box-shadow:0px 0px 10px #00ff00;
+	color: #00FF00;
+	font-family: "Consolas";
+	text-align: center;
+	margin: auto;
+	margin-bottom: 20px;
+	background: #00000090;
+	border-radius: 10px;
+	width: 60%;
+	}
+	
+	.contentbox2{
+	box-shadow:0px 0px 10px #00ff00;
+	color: #00FF00;
+	font-family: "Consolas";
+	font-size: 18px;
+	margin: auto;
+	background: #00000090;
+	border-radius: 10px;
+	width: 95%;
+	margin-top: 10px;
+	padding: 20px;
+	}
+	
+	.ribbon{
+	box-shadow:0px 0px 10px #00ff00;
+	background: #00000090;
+	border-radius: 10px;
+	display: flex;
+	margin: auto;
+	text-align: center;
+	width: 97%;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 10px;
+	height: 80px;
+	}
+	
+	.subdiv{
+	margin: 0px;
+	}
+	
+	.cursor {
+	animation: blinker 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
+	}
+	@keyframes blinker {
+	50%{
+        opacity: 0;
+	}
+	}
+	
+	.flicker {
+	animation-name: flash;
+	animation-duration: 0.2s;
+	animation-iteration-count: infinite;
+	}
+	
+	@keyframes flash {
+	0%   {opacity:1}
+	25%  {margin-left:1px;opacity:0.9;}
+	50%  {opacity:1;}
+	75%  {opacity:0.9}
+	100% {opacity:1}
+	}
+	
+	.center{
+	margin: auto;
+	display:flex;
+	}
+	
+	.ribbonbutton{
+	border: 1px solid #00FF0020;
+	background: #000000BB;
+	color: #00FF00;
+	border-radius: 10px;
+	font-family: "Consolas";
+	font-size: max(1.1vw, 18px);
+	padding: 10%;
+	width: 8vw;
+	min-width: 120px;
+	cursor:pointer;
+	}
+	
+	.ribbonbutton:hover {background-color:#00BB0020;box-shadow:0px 0px 20px #00ff00;}
+	
+	.button1{
+	border: 0px;
+	background: #bb0000;
+	color: #FFFFFF;
+	border-radius: 10px;
+	font-family: "Consolas";
+	font-size: 24px;
+	padding: 5px;
+	width: 120px;
+	cursor:pointer;
+	}
+	
+	.button1:hover {background-color:#FF0000;box-shadow:0px 0px 20px #ff0000;}
+	
+	.button2{
+	border: 0px;
+	background: #5865F2;
+	color: #FFFFFF;
+	border-radius: 10px;
+	font-family: "Consolas";
+	font-size: 24px;
+	padding: 5px;
+	width: 120px;
+	cursor:pointer;
+	}
+	
+	.button2:hover {background-color:#98A8FF;box-shadow:0px 0px 20px #98A8FF;}
+	
+	.button3{
+	border: 2px solid #000000;
+	background: #ffffff;
+	color: #000000;
+	border-radius: 10px;
+	font-family: "Consolas";
+	font-size: 24px;
+	padding: 5px;
+	width: 120px;
+	cursor:pointer;
+	}
+	
+	.button3:hover {background-color:#ffffff;box-shadow:0px 0px 20px #ffffffff;}
+	
+	.button4{
+	border: 0px;
+	background: #009D00;
+	color: #ffffff;
+	border-radius: 10px;
+	font-family: "Consolas";
+	font-size: 24px;
+	padding: 5px;
+	width: 120px;
+	cursor:pointer;
+	}
+	
+	.button4:hover {background-color:#30BD30;box-shadow:0px 0px 20px #009D00ff;}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #000000; 
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(0, 180, 0); 
+	border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(0, 150, 0); 
+}
+
+.collapsible {
+	border: 1px solid #00FF0020;
+	background: #000000BB;
+	color: #00FF00;
+	border-radius: 10px 10px 10px 10px;
+	font-family: "Consolas";
+	font-size: 24px;
+	padding: 10px;
+	width: 100%;
+	cursor:pointer;
+	text-align: left;
+}
+
+.active, .collapsible:hover {
+  background-color: #002200BB;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.content {
+  display:flex;
+  justify-content:space-between;
+  align-items:left;
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  border: 1px solid #00FF0020;
+  background-color: #000000AA;
+  border-radius: 0px 0px 10px 10px;
+}
